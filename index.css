@@ -1,0 +1,101 @@
+body{
+    background-color: antiquewhite;
+}
+.light{
+    margin-left: 45vw;
+    margin-top: 30vh;
+}
+.trafficLight {
+    background-color: black;
+    width: 60px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 5px;
+    border-radius: 10px;
+  }
+  .trafficLight>div {
+    width: 55px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: gray;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+  }
+  .red {
+    animation-name: red;
+  }
+  .yellow {
+    animation-name: yellow;
+  }
+  .green {
+    animation-name: green;
+  }
+
+  @keyframes red {
+    0%,
+    25% {
+      background-color: red;
+    }
+    26%,
+    100% {
+      background-color: gray;
+    }
+  }
+
+  @keyframes yellow {
+    0%,
+    25% {
+      background-color: gray;
+    }
+    26%,
+    35% {
+      background-color: yellow;
+    }
+    36%,
+    45% {
+      background-color: gray;
+    }
+    46%,
+    54% {
+      background-color: yellow;
+    }
+    55%,
+    64%{
+        background-color: grey;
+    }
+    65%,
+    74%{
+        background-color: yellow;
+    }
+    75%,
+    100% {
+      background-color: gray;
+    }
+  }
+
+  @keyframes green {
+    0%,
+    75% {
+      background-color: gray;
+    }
+    76%,
+    100% {
+      background-color: green;
+    }
+  }
+.pole{
+    height: 300px;
+    width: 10px;
+    border: 1px solid black;
+    background-color: black;
+    margin-left: 30px;
+}
+.ground{
+    width: 100%;
+    height: 30px;
+    background-color: brown;
+}
